@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+body {
+  background: #0F0F10;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video{
+  position: absolute;
+  width: 60%;
+  height:70%;
+  left: 8%;
+  top: 15%;
+
+  background-color:#6042FF;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.video .btnsVideo{
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  height: 45%;
+  right: 3%;
+  top: 3%;
+}
+
+.video .btnsVideo button{
+  border-radius: 50%;
+  border: 0;
+  height:40px ;
+  width: 40px;
+
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.btnsOpt{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:25%;
+  right: 3%;
+  top: 4%;
+}
+
+.btnsOpt button {
+  background-color: #0F0F10;
+  text-decoration: none;
   color: white;
+  border: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size:18px;
+  margin: 2%;
 }
 
-.App-link {
-  color: #61dafb;
+Link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnsOpt button p{
+  text-decoration: none !important;
+  color: white !important;
+  outline: none !important;
+  text-decoration-line: none !important;
+
+}
+Link .cir:hover{
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: white;
+}
+.peopleView{
+  position: absolute;
+  width: 22%;
+  right: 5%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.peopleView .cont {
+  display: flex;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.peopleView .cont .imgView{
+background-color: #6042FF;
+border-radius: 10px;
+width: 40%;
+height: 110px;
+margin-right: 5%;
+  
+}
+
+.chatView{
+  position: absolute;
+  width: 22%;
+  right: 5%;
+  top: 15%;
+  background-color: white;
+  height: 70%;
 }
